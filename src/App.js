@@ -89,6 +89,10 @@ function App() {
     }));
   };
 
+  const removeSubject = (id) => {
+    setSubjects(subjects => subjects.filter(subject => subject.id !== id));
+  };
+
   return (
     <div className="app">
       <Header />
@@ -99,6 +103,7 @@ function App() {
           toggleShowFormMark={toggleShowFormMark}
           addNewMark={addNewMark}
           removeMark={removeMark}
+          removeSubject={removeSubject}
         />
         <div className="container--line">
           <ButtonAddSubject

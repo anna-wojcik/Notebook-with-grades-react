@@ -7,6 +7,8 @@
 
 .list__item--backgroundGrey {
     background: rgb(229, 229, 229);
+    display: flex;
+    justify-content: space-between;
 }
 
 .list__item--paragraph {
@@ -21,4 +23,31 @@
 
 .list__item--paragraph:nth-of-type(2) {
     padding: 0 20px;
+}
+
+.list__item--containerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95.17px;
+}
+
+.list__item--buttonDeleteSubjet {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: rgb(229, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: transform 0.25s;
+}
+
+.list__item--buttonDeleteSubjet:hover {
+    transform: scale(1.25);
+}
+
+.list__item--buttonDeleteSubjet:active {
+    transform: scale(0.75);
 }
