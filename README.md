@@ -1,6 +1,6 @@
 # Notebook with grades
 The subject of the project is notebook with grades in subjects. The notebook allows to add subjects and marks. 
-<br>Here is a working live demo: 
+<br>Here is a working live demo: https://anna-wojcik.github.io/Notebook-with-grades-react/ 
 <br>This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
