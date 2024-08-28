@@ -4,6 +4,19 @@
     max-width: 450px;
 }
 
+@media(max-width: 420px) {
+    .form--addSubject {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.form--container {
+    text-align: center;
+}
+
 .form__labelText {
     width: 100%;
     max-width: 200px;
@@ -24,6 +37,12 @@
     border-radius: 20px;
     display: block;
     margin: 0 auto;
+}
+
+@media(max-width: 420px) {
+    .form__button--addSubject {
+        margin: 0;
+    }
 }
 
 .form__button--addSubject:hover {

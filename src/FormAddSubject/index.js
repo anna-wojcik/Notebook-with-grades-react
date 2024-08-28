@@ -18,17 +18,19 @@ const FormAddSubject = ({ showFormSubject, addNewSubject, toggleShowFormSubject 
     if (showFormSubject === true) {
         return (
             <form className="form--addSubject" onSubmit={onFormSubmit}>
-                <p>
-                    <label>
-                        <span className="form__labelText">*Nazwa przedmiotu</span>
-                        <input
-                            className="form__field"
-                            value={newSubjectContent}
-                            onChange={onNewSubjectContentChange}
-                            required 
+                <div className="form--container">
+                    <p>
+                        <label>
+                            <span className="form__labelText">*Nazwa przedmiotu</span>
+                            <input
+                                className="form__field"
+                                value={newSubjectContent}
+                                onChange={onNewSubjectContentChange}
+                                required
                             />
-                    </label>
-                </p>
+                        </label>
+                    </p>
+                </div>
                 <button className="form__button--addSubject">DODAJ PRZEDMIOT</button>
             </form>
         );
