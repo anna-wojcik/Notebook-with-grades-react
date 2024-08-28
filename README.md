@@ -1,5 +1,5 @@
 # Notebook with grades
-The subject of the project is notebook with grades in subjects. The notebook allows to add subjects and marks. 
+The subject of the project is notebook with grades in subjects. The notebook allows to add as well as remove subjects and marks. 
 <br>Here is a working live demo: https://anna-wojcik.github.io/Notebook-with-grades-react/ 
 <br>This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -10,12 +10,11 @@ The subject of the project is notebook with grades in subjects. The notebook all
 * [Gif](#gif)
 * [Available Scripts](#available-scripts)
 * [Project Status](#project-status)
-* [Room for Improvment](#room-for-improvment)
 * [Acknowledgments](#acknowledgments)
 * [Author](#author)
 
 ## Description
-This website depicts a notebook with grafes in subjects. It is very easy to use. In the middle of the page is button that adds new subject to the list. When the name of new subject was entered you have click on next button to add subject. After that you can click "plus" button to add new mark. Before that you will be forced to enter: grade, for what, importance of grade. 
+This website depicts a notebook with grafes in subjects. It is very easy to use. In the middle of the page is button that adds new subject to the list. When the name of new subject was entered you have click on next button to add subject. After that you can click "plus" button to add new mark. Before that you will be forced to enter: grade, for what, importance of grade. Notebook allows you to delete subject (click on red "X") and also delete mark (click on button "Usuń").
 
 ## Technologies Used
 - JavaScript
@@ -29,7 +28,7 @@ This website depicts a notebook with grafes in subjects. It is very easy to use.
 - Media Queries
 
 ## Gif
-![notes-ocen](https://github.com/user-attachments/assets/2da910a1-93e8-49a3-bc9a-86c7b9bff8c8)
+![alt text](notes-ocen-new.gif)
 
 ## Available Scripts
 In the project directory, you can run:
@@ -60,14 +59,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Project Status
-Project is in progress and it is the result of learing programming.
-
-## Room for Improvment
-To do:
-* Ability to delete marks
+Project is finished now. However, during the acquisition of new knowledge, the project will be expanded.
 
 ## Acknowledgments
-This project was inspired by the course "Frontened Developer from the basis" by online programming school YouCode.
+This project was made thanks to the knowledge gained on the course "Frontened Developer from the basis" run by online programming school YouCode.
 
 ## Author 
 Created by Anna Wójcik.
