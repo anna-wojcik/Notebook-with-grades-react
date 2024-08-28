@@ -17,7 +17,7 @@ function calculateAverageMark(subject) {
   }
 };
 
-const Subjects = ({ subjects, showFormMarks, toggleShowFormMark, addNewMark }) => {
+const Subjects = ({ subjects, showFormMarks, toggleShowFormMark, addNewMark, removeMark }) => {
   return (
     <ul className="list">
       {subjects.map(subject => (
@@ -27,7 +27,7 @@ const Subjects = ({ subjects, showFormMarks, toggleShowFormMark, addNewMark }) =
             <p className="list__item--paragraph">Średnia: {calculateAverageMark(subject)}</p>
             <p className="list__item--paragraph">Oceny</p>
           </div>
-          <Marks subject={subject} toggleShowFormMark={toggleShowFormMark} />
+          <Marks subject={subject} toggleShowFormMark={toggleShowFormMark} removeMark={removeMark} />
           <FormAddMark showFormMarks={showFormMarks} id={subject.id} addNewMark={addNewMark} toggleShowFormMark={toggleShowFormMark}/>
         </li>
       ))}

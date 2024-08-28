@@ -55,6 +55,40 @@ function App() {
     }));
   };
 
+  const removeMark = (idSubject, index) => {
+    const firstTempMarks = [...subjects[idSubject - 1].marks].slice(0, index);
+    const secondTempMarks = [...subjects[idSubject - 1].marks].slice(index + 1);
+    const updatedMarks = [
+      ...firstTempMarks,
+      ...secondTempMarks
+    ];
+
+    const firstTempTestMarks = [...subjects[idSubject - 1].testMarks].slice(0, index);
+    const secondTempTestMarks = [...subjects[idSubject - 1].testMarks].slice(index + 1);
+    const updatedTestMarks = [
+      ...firstTempTestMarks,
+      ...secondTempTestMarks
+    ];
+
+    const firstTempImportanceMarks = [...subjects[idSubject - 1].importanceMarks].slice(0, index);
+    const secondTempImportanceMarks = [...subjects[idSubject - 1].importanceMarks].slice(index + 1);
+    const updatedImportanceMarks = [
+      ...firstTempImportanceMarks,
+      ...secondTempImportanceMarks
+    ];
+    setSubjects(subjects => subjects.map(subject => {
+      if (subject.id === idSubject) {
+        return {
+          ...subject,
+          marks: updatedMarks,
+          testMarks: updatedTestMarks,
+          importanceMarks: updatedImportanceMarks
+        };
+      }
+      return subject;
+    }));
+  };
+
   return (
     <div className="app">
       <Header />
@@ -64,6 +98,7 @@ function App() {
           showFormMarks={showFormMarks}
           toggleShowFormMark={toggleShowFormMark}
           addNewMark={addNewMark}
+          removeMark={removeMark}
         />
         <div className="container--line">
           <ButtonAddSubject

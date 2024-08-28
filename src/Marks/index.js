@@ -46,13 +46,18 @@ function markText(mark) {
     return markText;
 };
 
-const Marks = ({ subject, toggleShowFormMark }) => (
+const Marks = ({ subject, toggleShowFormMark, removeMark }) => (
     <ul className="list--marks">
         {subject.marks.map((mark, id) => (
             <li key={id} className={`list__item--mark ${backgroundColor(mark)}`}>
                 <div className="list__item--number">{markText(mark)}</div>
                 <div className="list__item--test">{subject.testMarks[id]}</div>
-                <button className="js-button--deleteMark list__item--buttonDeleteMark">Usuń</button>
+                <button
+                    className="list__item--buttonDeleteMark"
+                    onClick={() => removeMark(subject.id, id)}
+                >
+                    Usuń
+                </button>
             </li>
         ))}
         <button
