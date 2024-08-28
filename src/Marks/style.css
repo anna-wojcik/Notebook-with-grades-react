@@ -85,8 +85,16 @@
     place-items: center;
     width: 100%;
     font-size: 13px;
-    background: #e7a5a5;
+    background: hsl(0, 58%, 78%);
     border: none;
+}
+
+.list__item--buttonDeleteMark:hover {
+    background: hsl(0, 58%, 68%);
+}
+
+.list__item--buttonDeleteMark:active {
+    background: hsl(0, 58%, 60%);
 }
 
 .list__item--buttonAddMark {
