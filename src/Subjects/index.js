@@ -1,6 +1,6 @@
 import "./style.css";
-import Marks from "../Marks";
-import FormAddMark from "../FormAddMark";
+import Marks from "./Marks";
+import FormAddMark from "./FormAddMark";
 
 function calculateAverageMark(subject) {
   let sum = 0;

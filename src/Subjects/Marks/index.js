@@ -1,4 +1,4 @@
-import { grades } from "../grades";
+import { grades } from "../../grades";
 import "./style.css";
 
 function backgroundColor(mark) {

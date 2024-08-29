@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { grades } from "../grades";
+import { grades } from "../../grades";
 import "./style.css"
 
 const FormAddMark = ({ showFormMarks, id, addNewMark, toggleShowFormMark }) => {
