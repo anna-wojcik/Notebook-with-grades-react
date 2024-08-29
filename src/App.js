@@ -94,7 +94,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <>
       <Header />
       <main>
         <Subjects
@@ -117,7 +117,7 @@ function App() {
         </div>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
