@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { grades } from "../grades";
 import "./style.css"
 
 const FormAddMark = ({ showFormMarks, id, addNewMark, toggleShowFormMark }) => {
@@ -41,23 +42,16 @@ const FormAddMark = ({ showFormMarks, id, addNewMark, toggleShowFormMark }) => {
                         <select
                             className="form__field"
                             value={mark}
-                            onChange={onSetMark}>
-                            <option value="1">1</option>
-                            <option value="1.5">1+</option>
-                            <option value="1.75">2-</option>
-                            <option value="2">2</option>
-                            <option value="2.5">2+</option>
-                            <option value="2.75">3-</option>
-                            <option value="3">3</option>
-                            <option value="3.5">3+</option>
-                            <option value="3.75">4-</option>
-                            <option value="4">4</option>
-                            <option value="4.5">4+</option>
-                            <option value="4.75">5-</option>
-                            <option value="5">5</option>
-                            <option value="5.5">5+</option>
-                            <option value="5.75">6-</option>
-                            <option value="6">6</option>
+                            onChange={onSetMark}
+                        >
+                            {grades.map(({ name, rate }) => (
+                                <option
+                                    key={rate}
+                                    value={rate}
+                                >
+                                    {name}
+                                </option>
+                            ))}
                         </select>
                     </label>
                 </p>
