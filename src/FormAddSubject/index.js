@@ -6,6 +6,9 @@ const FormAddSubject = ({ showFormSubject, addNewSubject, toggleShowFormSubject 
 
     const onFormSubmit = (event) => {
         event.preventDefault();
+        if (newSubjectContent.trim() === "") {
+            return;
+        }
         addNewSubject(newSubjectContent);
         setNewSubjectContent("");
         toggleShowFormSubject();
