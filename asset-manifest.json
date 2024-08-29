@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Notebook-with-grades-react/static/css/main.d073ec31.css",
-    "main.js": "/Notebook-with-grades-react/static/js/main.3acedacd.js",
+    "main.css": "/Notebook-with-grades-react/static/css/main.9c968ced.css",
+    "main.js": "/Notebook-with-grades-react/static/js/main.51a457a0.js",
     "static/js/453.00ace4ef.chunk.js": "/Notebook-with-grades-react/static/js/453.00ace4ef.chunk.js",
     "index.html": "/Notebook-with-grades-react/index.html",
-    "main.d073ec31.css.map": "/Notebook-with-grades-react/static/css/main.d073ec31.css.map",
-    "main.3acedacd.js.map": "/Notebook-with-grades-react/static/js/main.3acedacd.js.map",
+    "main.9c968ced.css.map": "/Notebook-with-grades-react/static/css/main.9c968ced.css.map",
+    "main.51a457a0.js.map": "/Notebook-with-grades-react/static/js/main.51a457a0.js.map",
     "453.00ace4ef.chunk.js.map": "/Notebook-with-grades-react/static/js/453.00ace4ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d073ec31.css",
-    "static/js/main.3acedacd.js"
+    "static/css/main.9c968ced.css",
+    "static/js/main.51a457a0.js"
   ]
 }
