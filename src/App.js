@@ -89,8 +89,19 @@ function App() {
     }));
   };
 
-  const removeSubject = (id) => {
-    setSubjects(subjects => subjects.filter(subject => subject.id !== id));
+  const removeSubject = (idSubject) => {
+    setSubjects(subjects => subjects.filter(subject => subject.id !== idSubject));
+    setSubjects(subjects => subjects.map(subject => {
+      if(subject.id > idSubject) {
+        return {...subject, id: subject.id - 1};
+      };
+      return subject;
+    }));
+
+    const firstTempShowFormMarks = [...showFormMarks].slice(0, idSubject-1);
+    const secondTempShowFormMarks = [...showFormMarks].slice(idSubject);
+    const updatedShowFormMarks = [...firstTempShowFormMarks, ...secondTempShowFormMarks];
+    setShowFormMarks(updatedShowFormMarks);
   };
 
   return (
