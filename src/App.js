@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./Header";
 import Subjects from "./Subjects";
 import ButtonAddSubject from "./ButtonAddSubject";
@@ -7,8 +7,12 @@ import Footer from "./Footer";
 
 function App() {
   const [showFormSubject, setShowFormSubject] = useState(false);
-  const [subjects, setSubjects] = useState([]);
+  const [subjects, setSubjects] = useState(JSON.parse(localStorage.getItem("subjects")) || []);
   const [showFormMarks, setShowFormMarks] = useState(Array(subjects.length).fill(false));
+
+  useEffect(() => {
+    localStorage.setItem("subjects", JSON.stringify(subjects));
+  }, [subjects]);
 
   const toggleShowFormSubject = () => {
     setShowFormSubject(showFormSubject => !showFormSubject);
@@ -92,13 +96,13 @@ function App() {
   const removeSubject = (idSubject) => {
     setSubjects(subjects => subjects.filter(subject => subject.id !== idSubject));
     setSubjects(subjects => subjects.map(subject => {
-      if(subject.id > idSubject) {
-        return {...subject, id: subject.id - 1};
+      if (subject.id > idSubject) {
+        return { ...subject, id: subject.id - 1 };
       };
       return subject;
     }));
 
-    const firstTempShowFormMarks = [...showFormMarks].slice(0, idSubject-1);
+    const firstTempShowFormMarks = [...showFormMarks].slice(0, idSubject - 1);
     const secondTempShowFormMarks = [...showFormMarks].slice(idSubject);
     const updatedShowFormMarks = [...firstTempShowFormMarks, ...secondTempShowFormMarks];
     setShowFormMarks(updatedShowFormMarks);
