@@ -1,9 +1,10 @@
 # Notebook with grades
 The subject of the project is notebook with grades in subjects. The notebook allows to add as well as remove subjects and marks. 
-
+<br>
+Here is a working live demo: https://anna-wojcik.github.io/Notebook-with-grades-react/ 
+<br>This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Table of Contents 
-* [About](#about)
 * [Description](#description)
 * [Technologies Used](#technologies-used)
 * [Gif](#gif)
@@ -11,10 +12,6 @@ The subject of the project is notebook with grades in subjects. The notebook all
 * [Project Status](#project-status)
 * [Acknowledgments](#acknowledgments)
 * [Author](#author)
-
-## About
-Here is a working live demo: https://anna-wojcik.github.io/Notebook-with-grades-react/ 
-<br>This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Description
 This website depicts a notebook with grafes in subjects. It is very easy to use. In the middle of the page is button that adds new subject to the list. When the name of new subject was entered you have click on next button to add subject. After that you can click "plus" button to add new mark. Before that you will be forced to enter: grade, for what, importance of grade. Notebook allows you to delete subject (click on red "X") and also delete mark (click on button "Usuń").
